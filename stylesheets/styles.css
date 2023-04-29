@@ -1,0 +1,26 @@
+html {
+    background-color: #090808;
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    display: grid;
+}
+
+/* Text formattting */
+#greeting {
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+#whoami {
+    color:#EB3F3F;
+    font-size: 1rem;
+}
+
+#actiontext {
+    color: #FFFFFF;
+    font-size: .8rem;
+    opacity: 0.8;
+}
