@@ -3,8 +3,25 @@ html {
     font-family: 'Oswald', sans-serif;
 }
 
-body {
+.container {
     display: grid;
+    grid-template-rows: 80vh 20vh;
+    grid-row-start: 1;
+}
+
+.contentrow {
+    display: grid;
+    grid-template-columns: 60vw 40vw;
+}
+
+.leftcolumn {
+    text-align: right;
+}
+
+.about-text {
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    justify-content: right;
 }
 
 /* Text formattting */
