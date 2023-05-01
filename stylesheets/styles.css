@@ -1,7 +1,11 @@
-body {
-    background-color: #343a40;
+html {
     font-family: 'Oswald', sans-serif;
+}
+
+body {
+    background: url("../img/BackgroundImage.png");
     width: 100vw;
+    background-size: cover;
 }
 .container {
     display: grid;
