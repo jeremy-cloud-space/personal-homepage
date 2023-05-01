@@ -1,3 +1,9 @@
+:root {
+    --red: #EB3F3F;
+    --basesize: 2rem;
+    --emsize: calc(2.5*var(--basesize));
+    --halfsize: calc(0.5*var(--basesize)); 
+}
 html {
     font-family: 'Oswald', sans-serif;
 }
@@ -11,7 +17,7 @@ body {
     display: grid;
     grid-template-rows: 80vh 20vh;
     margin-left: 0;
-    margin-top: 5rem;
+    margin-top: var(--emsize);
     grid-row-start: 1;
 }
 
@@ -27,7 +33,7 @@ body {
 }
 
 .rightcol {
-    margin-left: 2rem;
+    margin-left: var(--basesize);
     align-content: end;
 }
 .contentrows {
@@ -42,7 +48,7 @@ body {
     display: grid;
     grid-template-columns: 100%;
     justify-self: right;
-    margin-top: 2rem;
+    margin-top: var(--basesize);
 }
 
 .contentcolumns {
@@ -54,18 +60,24 @@ body {
 /* Text formattting */
 .greeting {
     color: #FFFFFF;
-    font-size: 5rem;
+    font-size: var(--emsize);
     font-weight: bolder;
 }
 
 .whoami {
-    color:#EB3F3F;
-    font-size: 2rem;
+    color: var(--red);
+    font-size: var(--basesize);
     text-align: right;
 }
 
-.scroll {
+.subtext {
     color: #FFFFFF;
-    font-size: 1rem;
+    font-size: var(--halfsize);
     opacity: 0.8;
+}
+
+.sectionheaders {
+    color: var(--red);
+    font-size: calc(1.5*var(--emsize));
+    font-weight:lighter;
 }
