@@ -1,13 +1,16 @@
-html {
-    background-color: #090808;
+body {
+    background-color: #343a40;
     font-family: 'Oswald', sans-serif;
+    width: 100vw;
 }
-
 .container {
     display: grid;
     grid-template-rows: 80vh 20vh;
+    margin-left: 0;
+    margin-top: 5rem;
     grid-row-start: 1;
 }
+
 
 .contents{
     display: grid;
@@ -21,6 +24,7 @@ html {
 
 .rightcol {
     margin-left: 2rem;
+    align-content: end;
 }
 .contentrows {
     display: grid;
