@@ -1,0 +1,46 @@
+/* We use CSS to control font size, colors and properties */
+
+:root {
+    --red: #EB3F3F;
+    --basesize: 2rem;
+    --emsize: calc(2.5*var(--basesize));
+    --halfsize: calc(0.5*var(--basesize)); 
+    
+}
+
+/* Add backgroud image */
+body {
+    background: url("../img/BackgroundImage.png");
+    width: 100vw;
+    background-size: cover;
+    height: 100vh;
+    /* Override variable declarations in Bootstrap CSS for customizations */
+    --bs-body-font-family: 'Oswald', sans-serif;
+    --bs-heading-color: #FFFFFF;
+}
+
+
+
+.top-pad {
+    /* To add padding between Nav bar and badge */
+    padding-top: 1rem;
+}
+
+.bottom-matter {
+    margin-top: 2rem;
+}
+.main {
+    font-size: var(--emsize);
+    font-weight: 500;
+}
+
+.about {
+    --bs-heading-color: var(--red);
+    font-weight: bold;
+}
+
+.subtext {
+    --bs-heading-color: #FFFFFF;
+    font-size: var(--basesize);
+    opacity: 0.8;
+}
